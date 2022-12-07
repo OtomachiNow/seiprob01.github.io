@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <title>青雲学園プログラミング部</title>
+    <style>
+        .header {
+            text-align: center;
+            background-color: rgba(0, 255, 255, 0.7);
+        }
+        .clm{
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .mokuzi{
+            width: 30%;
+            height: 400px;
+            text-align: center;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 40px;
+            background-color: aquamarine;
+        }
+        .main{
+            width: 65%;
+            height: 1200px;
+            text-align: center;
+            background-color: bisque;
+        }
+        .houkoku{
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            overflow: scroll;
+            background-color: bisque;
+        }
+        .foot{
+            height: 50px;
+            text-align: center;
+            background-color: burlywood;
+        }
+        .nisi{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="head">
+        <h1>青雲学園プログラミング部</h1>
+        <p>我ラガ大戦艦大和ハ潜水任務二移行セリ</p>
+    </div>
+
+    <div class="clm">
+        <div class="mokuzi">
+            <h1>もくじ</h1>
+            <p><a href="#head">トップ</a></p>
+            <p><a href="#katudou">活動報告</a></p>
+            <p><a href="#rekidai">歴代部長</a></p>
+        </div>
+
+        <div class="main">
+            <div class="katudou" id="katudou">
+                <h1>かつどうほうこく</h1>
+                <div class="houkoku">
+                    <div class="nisi" id="2022/12/07">
+                        <p>2022/12/07</p>
+                        <p>今日はいろいろやりました</p>
+                    </div>
+                    <div class="nisi" id="2022/12/05">
+                        <p>2022/12/05</p>
+                        <p>浦川先生が来てくださいました</p>
+                    </div>
+                    <div class="nisi" id="2022/12/01">
+                        <p>2022/12/01</p>
+                        <p>とうとうUnityを触る人がいなくなりました...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rekidai", id="rekidai">
+                <h1>れきだいのぶちょう</h1>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <footer class="foot">
+        made by M
+    </footer>
+
+</body>
+
