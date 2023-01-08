@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <title>数学</title>
+    <style>
+        .header {
+            text-align: center;
+            background-color: rgba(0, 255, 255, 0.7);
+        }
+        .clm{
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .mokuzi{
+            width: 25%;
+            height: 400px;
+            text-align: center;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 40px;
+            background-color: aquamarine;
+        }
+        .main{
+            width: 70%;
+            text-align: left;
+            
+            background-color: bisque;
+        }
+        .cnt{
+            margin: 20px;
+        }
+        #brank{
+            margin-bottom: 36px;
+        }
+        .foot{
+            height: 50px;
+            text-align: center;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="head">
+        <h1>青雲学園プログラミング部</h1>
+        <p>数学/情報</p>
+    </div>
+
+    <div class="clm">
+        <div class="mokuzi">
+            <h1>もくじ</h1>
+            <p><a href="../../index.html">トップ</a></p>
+            <p><a href="../../index.html#katudou">活動報告</a></p>
+            <p><a href="../math.html">数学/情報</a></p>
+        </div>
+
+        <div class="main">
+            <div class="cnt">
+                <h1 id="brank">自然数が既約ピタゴラス数であることと自然数が4n+1型であることは同値である話</h1>
+                <p id="brank">ここで言う既約ピタゴラス数は、共通する素因数を持たないある３つの自然数が \(a^{2}+b^{2}=c^{2}\) を満たすときその内の一つに含まれるような自然数を指します。</p>
+                <p id="brank">=証明=</p>
+                <p>まず全ての奇数は既約ピタゴラス数であることを示す。1より大きい奇数は自然数 \(n\) を用いて \(2n+1\) と表される。そしてこれは、</p>
+                <p>\((2n+1)^{2}+(2n^{2}+2n)^{2}=(2n^{2}+2n+1)^{2}\)</p>
+                <p>としてピタゴラス数である。次にこの中の２数は互いに素であることを示す。</p>
+                <p id="brank">まず \(2n^{2}+2n\) と \(2n^{2}+2n+1\) は明らかに互いに素であるため、これらは既約ピタゴラス数である。</p>
+                <p>\(4n\) と表される全ての自然数は既約ピタゴラス数であることを示す。これは</p>
+                <p>\((4n)^{2}+(4n-1)^{2}=(4n+1)^{2}\)</p>
+                <p>としてピタゴラス数である。</p>
+                <p id="brank">また \(4n\) と \(4n+1\) は明らかに互いに素であるため、これらは既約ピタゴラス数である。</p>
+                <p id="brank">\(4n+2\)と表される全ての自然数は既約ピタゴラス数でないことを示す。</p>
+                <p>\((4n+2)^{2}+b^{2}=c^{2}\) を満たす自然数 \(n,b,c\) は存在しないことを示す。</p>
+                <p id="ue">既約ピタゴラス数\(a,b,c\)に対して \(a \equiv 0 \pmod 2\) (以下mod2)であるとき \(b,c \equiv 1\) であるから、</p>
+                <p>\(b,c \equiv 1\) より \(b=2B+1, c=2C+1\) と表される。よって、</p>
+                <p>\((4n+2)^{2}=c^{2}-b^{2}\)</p>
+                <p>\((4n+2)^{2}=(c+b)(c-b)\)</p>
+                <p>\((4n+2)^{2}=4(C+B+1)(C-B)\)</p>
+                <p>\((2n+1)^{2}=(C+B+1)(C-B)\)</p>
+                <p>\(C\) が奇数か偶数に関わらず、右辺の因数のどちらかは偶数であり、もう片方は奇数である。。</p>
+                <p id="brank">したがって左辺奇数、右辺偶数より、この式を満たす自然数 \(n,C,B\) は存在しない。よって \((4n+2)^{2}+b^{2}=c^{2}\) を満たす自然数 \(n,b,c\) は存在しない。</p>
+                <p>次に、\(a^{2}+b^{2}=(4n+2)^{2}\) を満たす自然数 \(a,b,n\) は存在しないことを示す。</p>
+                <p>上と同様の議論より右辺偶数の場合左辺の２項は偶奇が一致し、更に３数は既約ピタゴラス数であるはずなので、\(a,b\) は \(a=2A+1, b=2B+1\) と表されるので、</p>
+                <p>\((2A+1)^{2}+(2B+1)^{2}=(4n+2)^{2}\)</p>
+                <p>\(4A^{2}+4A+4B^{2}+4B+2=16n^{2}+16n+4\)</p>
+                <p>\(2(A^{2}+A+B^{2}+B)+1=2(4n^{2}+4n+1)\)</p>
+                <p id="brank">左辺偶数に対して右辺奇数より矛盾。したがって\(a^{2}+b^{2}=(4n+2)^{2}\) を満たす自然数 \(a,b,n\) は存在しない。</p>
+                <p>=証了=</p>
+
+            </div>
+        </div>
+        
+
+    </div>
+
+    <footer class="foot">
+        made by M
+    </footer>
+
+</body>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <title>数学</title>
+    <style>
+        .header {
+            text-align: center;
+            background-color: rgba(0, 255, 255, 0.7);
+        }
+        .clm{
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .mokuzi{
+            width: 25%;
+            height: 400px;
+            text-align: center;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 40px;
+            background-color: aquamarine;
+        }
+        .main{
+            width: 70%;
+            text-align: left;
+            
+            background-color: bisque;
+        }
+        .cnt{
+            margin: 20px;
+        }
+        #brank{
+            margin-bottom: 36px;
+        }
+        .foot{
+            height: 50px;
+            text-align: center;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="head">
+        <h1>青雲学園プログラミング部</h1>
+        <p>数学/情報</p>
+    </div>
+
+    <div class="clm">
+        <div class="mokuzi">
+            <h1>もくじ</h1>
+            <p><a href="../../index.html">トップ</a></p>
+            <p><a href="../../index.html#katudou">活動報告</a></p>
+            <p><a href="../math.html">数学/情報</a></p>
+        </div>
+
+        <div class="main">
+            <div class="cnt">
+                <h1 id="brank">逆手流についての話</h1>
+                <p id="brank">まず逆手流で下の問題を解説します。</p>
+                <p id="brank">「\(t\) が全ての実数値を取るとき \(y=tx+t^{2}\) の通過領域を求めよ」</p>
+                <p>まず、点\((1,-4)\)は通過領域に含まれるでしょうか。</p>
+                <p>座標を与式に代入してみると、</p>
+                <p>\(-4=t+t^{2}\)</p>
+                <p>\(t^{2}+t+4=0\)</p>
+                <p id="brank">判別式 \(D=1-4\lt0\) より、この点は通過領域に含まれない。</p>
+                <p>さて、なぜこの点は通過領域に含まれなかったのでしょうか。</p>
+                <p>それは「点の座標を代入したときの \(t\) の式を満たす \(t\) が存在しなかったから」です。</p>
+                <p>座標平面上のどんな点を持ってきても、それを与式に代入した \(t\) の式を満たす \(t\) が存在すれば、その点は通過領域に含まれます。</p>
+                <p>したがってこの問題は次のような見方をすることが出来ます。</p>
+                <p>「\(t\) についての方程式 \(t^{2}+tx-y=0\) が実数解を持つような \((x,y)\)の条件を求めよ」</p>
+                <p id="brank">これを解きましょう。</p>
+                <p>判別式 \(D\geq0\) となればよいので、</p>
+                <p>\(x^{2}-4y\geq0\)</p>
+                <p id="brank">\(\frac{x^{2}}{4}\geq y\) である。</p>
+                <p>繰り返しますが、</p>
+                <p>「ある点 \((x,y)\)を通る直線が存在する」</p>
+                <p>\(\Updownarrow\)</p>
+                <p>「\(t\) についての二次方程式 \(t^{2}+tx-y=0\) が実数解を持つ」</p>
+                <p id="brank">ということです。</p>
+                <p>ほかに条件を追加してみましょう。例えば「\(t\geq0\)」にしてみましょう。</p>
+                <p id="brank">「\(t (t\geq0)\) に対して \(y=tx+t^{2}\) の通過領域を求めよ」</p>
+                <p>\(f(t)=t^{2}+tx-y\) とする。方程式 \(f(t)=0\) が実数解を持つ必要十分条件は、</p>
+                <p>
+                    \begin{eqnarray}
+                      \left\{
+                        \begin{array}{l}
+                          f(0)\geq0 \ または\\
+                          軸\geq0 かつ f(軸)\geq0
+                        \end{array}
+                      \right.
+                    \end{eqnarray}
+                </p>
+                <p id="brank">である。</p>
+                <p>上について、</p>
+                <p>\(f(0)=-y\)</p>
+                <p>\(-y\geq0\)</p>
+                <p id="brank">\(y\leq0...A\)</p>
+                <p>下について、</p>
+                <p>\(f(t)=(t+\frac{x}{2})^{2}-\frac{x^{2}}{4}-y\) であるから、</p>
+                <p>\(-\frac{x}{2}\geq0\)</p>
+                <p>\(x\leq0...B1\)</p>
+                <p>また、</p>
+                <p>\(f(\frac{x}{2})=\frac{x^2}{4}-\frac{x^2}{2}-y\)</p>
+                <p>\(\frac{x^2}{4}-\frac{x^2}{2}-y\geq0\)</p>
+                <p id="brank">\(-\frac{x^{2}}{4}\geq y...B2\)</p>
+                <p>\(A,B1,B2\) より、求める領域は</p>
+                <p id="brank">\(-\frac{x^{2}}{4}\geq y \ (x\geq0), \ y\leq0\) である。</p>
+                <p>NEXT-><a href="maths3.html">一文字固定法についての話</a></p>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <footer class="foot">
+        made by M
+    </footer>
+
+</body>
