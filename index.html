@@ -39,14 +39,14 @@
             height: 400px;
             margin: auto;
             overflow-y: scroll;
-            
         }
         .foot{
             height: 50px;
             text-align: center;
             background-color: burlywood;
         }
-        .nisi{
+        #InsertText{
+            white-space:pre-line;
             text-align: left;
         }
     </style>
@@ -73,44 +73,17 @@
 <p></p>
 </div>
 <div class="katudou" id="katudou">
-<h1>かつどうほうこく</h1>
-<div class="houkoku">
-    <div class="nisi" id="2023/1/12">
-        <p>2023/1/12</p>
-        <p>1月10日から青雲学園でオンライン授業が始まりました</p>
-        <p>オンライン授業と言っても形式は様々で，GoogleMeetでライブする先生，授業動画を送る先生，授業をまとめたスライドを配布する先生，ゆっくり解説動画のリンクを貼る先生など見ていて楽しいです</p>
-        <p>ところでプロ部では部員の幾人かはMeet中にアバターを利用したものもいます．処分は気になりますが，利用した技術は下のリンクのものです</p>
-        <p><a href="https://qiita.com/noritsune/items/144fe9073a324bab8b6f">Google Meetでアバター化する方法</a></p>
-        <p>仮想カメラの設定はシステム側のお話で私は専門外だったので，助かりました</p>
+    <h1>かつどうほうこく</h1>
+    <div class="houkoku" id="InsertText">
     </div>
-        <div class="nisi" id="2023/1/8">
-                <p>2023/1/8</p>
-                <p>あけましておめでとうございます</p>
-                <p>一時は停止したこのサイトも復活の兆しを見せております</p>
-                <p>また，近くに大きくサイトのデザインを改変する予定もございます</p>
-                <p>今後ともよろしくお願いいたします。</p>      
-        </div>
-<div class="nisi" id="2022/12/12">
-<p>2022/12/12</p>
-<p>今日は5人が活動していました。4人がScratch、1人がhtmlです。</p>
-</div>
-<div class="nisi" id="2022/12/09">
-<p>2022/12/09</p>
-<p>きょうはこうはいくんがずっとYoutubeを見ていました</p>
-</div>
-<div class="nisi" id="2022/12/07">
-<p>2022/12/07</p>
-<p>今日はいろいろやりました</p>
-</div>
-<div class="nisi" id="2022/12/05">
-<p>2022/12/05</p>
-<p>浦川先生が来てくださいました</p>
-</div>
-</div>
+    <script type="module">
+        import text from "./gettxt.js";
+        var nisi = document.getElementById("InsertText");
+        nisi.innerHTML = text;
+    </script>
 </div>
 <p></p>
 </div>
-
 </div>
 
 <footer class="foot">
