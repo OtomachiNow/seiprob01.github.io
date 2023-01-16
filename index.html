@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+<meta content="z8OfpnZZ0GRb2P1yOu65JZkcNHXV_VZBWJJJqQBUZ5U" name="google-site-verification"/>
+<title>青雲学園プログラミング部</title>
+<style>
+        .header {
+            text-align: center;
+            background-color: rgba(0, 255, 255, 0.7);
+        }
+        .clm{
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .mokuzi{
+            width: 25%;
+            height: 400px;
+            text-align: center;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 40px;
+            background-color: aquamarine;
+        }
+        .main{
+            width: 70%;
+            text-align: center;
+            background-color: bisque;
+        }
+        .setumei{
+            width: 80%;
+            margin: auto;
+        }
+        .houkoku{
+            width: 85%;
+            height: 400px;
+            margin: auto;
+            overflow-y: scroll;
+        }
+        .foot{
+            height: 50px;
+            text-align: center;
+            background-color: burlywood;
+        }
+        #InsertText{
+            white-space:pre-line;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="header" id="head">
+<h1>青雲学園プログラミング部</h1>
+<p>TOPPAGE</p>
+</div>
+<div class="clm">
+<div class="mokuzi">
+<h1>もくじ</h1>
+<p><a href="#head">トップ</a></p>
+<p><a href="#katudou">活動報告</a></p>
+<p><a href="subs/math.html">数学/情報</a></p>
+<p><a href="subs/game.html">ゲーム</a></p>
+</div>
+<div class="main">
+<div class="setumei">
+<h1>プログラミング部とは</h1>
+<p>2021年5月29日、46回生が設立した同好会。</p>
+<p>日々進化する情報社会に追いつき、「プログラミング」について学んでいます。</p>
+<p>活動日は月,水,木,金の放課後です。</p>
+<br/>
+<p></p>
+</div>
+<div class="katudou" id="katudou">
+    <h1>かつどうほうこく</h1>
+    <div class="houkoku" id="InsertText">
+    </div>
+    <script type="module">
+        import text from "./gettxt.js";
+        var nisi = document.getElementById("InsertText");
+        nisi.innerHTML = text;
+    </script>
+</div>
+<p></p>
+</div>
+</div>
+
+<footer class="foot">
+    </footer>
+</body>
